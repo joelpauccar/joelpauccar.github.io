@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color: #144659;
+  --secondary-color: #1F788C;
+  --main-txt-color: #6C6F70;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--main-color);
+}
+
+section h1 span {
+  color: var(--secondary-color);
+}
+
+section > p {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1rem;
+  line-height: 30px;
+  color: var(--main-txt-color);
+}
+
+section > h2 {
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+section > h2::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+.lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lista .item {
+  width: 50%;
+  text-align: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.lista .item .box {
+  border-top: 1px solid var(--secondary-color);
+  padding: 3rem 0;
+  position: relative;
+}
+
+.lista .item .box h2 {
+  margin-bottom: .5rem;
+  color: var(--secondary-color);
+}
+
+.lista .item .box .small {
+  margin-top: 2rem;
+}
+
+.lista .item .box img {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.lista .item .box:hover img {
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
+}
+
+.lista .item .box article {
+  position: absolute;
+  color: var(--main-txt-color);
+  top: 25%;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.lista .item .box article a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+  text-decoration: none;
+  margin: 3rem 0 0;
+  color: var(--secondary-color);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.lista .item .box article a:hover, .lista .item .box article a:focus {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.lista .item .box:hover article {
+  opacity: 1;
+}
+
+.lista .item:nth-child(2n+1) {
+  border-right: 1px solid var(--secondary-color);
+}
+
+.lista .item:nth-child(2n+1) .box:hover img {
+  -webkit-transform: translateX(-10rem);
+          transform: translateX(-10rem);
+}
+
+.lista .item:nth-child(2n+1) .box article {
+  right: 0;
+  text-align: right;
+}
+
+.lista .item:nth-child(2n+0) .box article {
+  left: 0;
+  text-align: left;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  border-top: 1px solid var(--secondary-color);
+}
+
+footer img {
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  color: var(--secondary-color);
+}
+
+footer a:hover {
+  color: var(--main-color);
+}
+/*# sourceMappingURL=estilos.css.map */
