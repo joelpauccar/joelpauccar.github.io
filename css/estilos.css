@@ -171,4 +171,9 @@ footer a {
 footer a:hover {
   color: var(--main-color);
 }
+@media screen and(max-width:991px){
+  .lista .item {
+    width:100%
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
