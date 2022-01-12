@@ -92,6 +92,7 @@ section > h2::after {
 .lista .item .box img {
   -webkit-transition: .3s;
   transition: .3s;
+  max-width:100%
 }
 
 .lista .item .box:hover img {
